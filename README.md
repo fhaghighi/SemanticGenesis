@@ -8,7 +8,7 @@
 Specifically, once the self-discovered anatomical pattern set is built, we jointly train the classification and restoration branches together in the model.
 
 \
-![Image of framework](https://github.com/mrht27200/test_SG/blob/master/images/framework.png)
+![Image of framework](https://github.com/fhaghighi/SemanticGenesis/blob/master/images/framework.png)
 
 
 ## Paper
@@ -20,7 +20,7 @@ Specifically, once the self-discovered anatomical pattern set is built, we joint
 
 ## Available implementation
 <a href="https://keras.io/" target="_blank">
-<img alt="Keras" src="https://github.com/mrht27200/test_SG/blob/master/images/keras_logo.png" width="200" height="55"> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pytorch.org/" target="_blank"><img alt="Keras" src="https://github.com/mrht27200/test_SG/blob/master/images/pytorch_logo.png" width="200" height="48"></a>  
+<img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/keras_logo.png" width="200" height="55"> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pytorch.org/" target="_blank"><img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/pytorch_logo.png" width="200" height="48"></a>  
 
 ## Citation
 If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/mrht27200/test_SG/) by using the following BibTex entry:
