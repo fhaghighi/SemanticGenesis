@@ -14,7 +14,7 @@ Specifically, once the self-discovered anatomical pattern set is built, we joint
 ## Paper
 <b>Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration</b> <br/>
 
-[Fatemeh Haghighi](https://github.com/mrht27200/test_SG)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/mrht27200/test_SG)<sup>1</sup>,[Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>,[Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
+[Fatemeh Haghighi](https://github.com/fhaghighi/SemanticGenesis)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/fhaghighi/SemanticGenesis)<sup>1</sup>,[Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>,[Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
 <sup>1</sup>Arizona State University; </sup>Mayo Clinic; <sup>2</sup><br/>
 [MICCAI 2020](https://www.miccai2020.org/), the 23rd International Conference on Medical Image Computing and Computer Assisted Intervention
 
@@ -43,4 +43,4 @@ This research has been supported partially by ASU and Mayo Clinic through a Seed
 
 ## License
 
-Released under the [ASU GitHub Project License](https://github.com/mrht27200/test_SG/blob/master/LICENSE) .
+Released under the [ASU GitHub Project License](https://github.com/fhaghighi/SemanticGenesis/blob/master/LICENSE) .
