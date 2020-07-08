@@ -23,7 +23,7 @@ Specifically, once the self-discovered anatomical pattern set is built, we joint
 <img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/keras_logo.png" width="200" height="55"> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pytorch.org/" target="_blank"><img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/pytorch_logo.png" width="200" height="48"></a>  
 
 ## Citation
-If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/mrht27200/test_SG/) by using the following BibTex entry:
+If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/fhaghighi/SemanticGenesis) by using the following BibTex entry:
 ```
 @InProceedings{haghighi2020semantic,
   author="Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming",
