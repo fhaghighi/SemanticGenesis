@@ -43,4 +43,4 @@ This research has been supported partially by ASU and Mayo Clinic through a Seed
 
 ## License
 
-Released under the [ASU GitHub Project License](https://github.com/fhaghighi/SemanticGenesis/blob/master/LICENSE) .
+Released under the [ASU GitHub Project License](https://github.com/fhaghighi/SemanticGenesis/blob/master/LICENSE).
