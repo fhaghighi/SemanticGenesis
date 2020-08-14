@@ -25,16 +25,13 @@ Arizona State University<sup>1</sup>, </sup>Mayo Clinic, <sup>2</sup><br/>
 ## Citation
 If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/fhaghighi/SemanticGenesis) by using the following BibTex entry:
 ```
-@InProceedings{haghighi2020semantic,
-  author="Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming",
-  title="Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration",
-  booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2020",
-  year="2020",
-  publisher="Springer International Publishing",
-  address="",
-  pages="",
-  isbn="",
-  url="https://link.springer.com/"
+@misc{haghighi2020learning,
+    title={Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration},
+    author={Fatemeh Haghighi and Mohammad Reza Hosseinzadeh Taher and Zongwei Zhou and Michael B. Gotway and Jianming Liang},
+    year={2020},
+    eprint={2007.06959},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
 
