@@ -1,29 +1,48 @@
-# Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration
+<p align="center"><img width="70%" src="images/logo_SG.png" /></p>
 
-<b>Semantic Genesis</b> is conceptually simple: an encoder-decoder structure with skip connections in between and a classification head at the end of the encoder. The objective for the model is to learn different sets of semantics-enriched representation from multiple perspectives. In doing so, our proposed framework consists of three important components: 
-1. Self-discovery of anatomical patterns from similar patients
-1. Self-classification of the patterns
-1. Self-restoration of the transformed patterns
+--------------------------------------------------------------------------------
 
-Specifically, once the self-discovered anatomical pattern set is built, we jointly train the classification and restoration branches together in the model.
+We have trained deep models to learn semantically enriched visual representation by self-discovery, selfclassification, and self-restoration of the anatomy underneath medical images, resulting in a semantics-enriched, general-purpose, pre-trained 3D model, named <b> Semantic Genesis </b>.  Not only does our self-supervised framework outperform existing methods, but also it can be used as an  <b> add-on </b> to improve existing representation learning methods. This key contribution enables many representation learning methods to learn <b> semantics-enriched </b>  representations from unlabeled medical images, a remarkable achievement in general-purpose representation learning. 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-\
-![Image of framework](https://github.com/fhaghighi/SemanticGenesis/blob/master/images/framework.png)
+<p align="center"><img width="100%" src="images/framework.png" /></p>
 
 
 ## Paper
+This repository provides the official implementation of training Semantic Genesis as well as using the pre-trained Semantic Genesis in the following paper:
+
 <b>Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration</b> <br/>
 
-[Fatemeh Haghighi](https://github.com/fhaghighi)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>,[Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>,[Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
-Arizona State University<sup>1</sup>, </sup>Mayo Clinic, <sup>2</sup><br/>
-[MICCAI 2020](https://www.miccai2020.org/), the 23rd International Conference on Medical Image Computing and Computer Assisted Intervention
+[Fatemeh Haghighi](https://github.com/fhaghighi)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>, [Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>, [Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
+Arizona State University<sup>1</sup>, </sup>Mayo Clinic <sup>2</sup><br/>
+International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI](https://www.miccai2020.org/)), 2020 <br/>
+
+[paper](https://arxiv.org/pdf/2007.06959.pdf) | [code](https://github.com/fhaghighi/SemanticGenesis/) | talk ([YouTube](https://www.youtube.com/embed/II4VkS9Lkdo)) 
 
 ## Available implementation
-<a href="https://keras.io/" target="_blank">
-<img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/keras_logo.png" width="200" height="55"> </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://pytorch.org/" target="_blank"><img alt="Keras" src="https://github.com/fhaghighi/SemanticGenesis/blob/master/images/pytorch_logo.png" width="200" height="48"></a>  
+[<img src="images/keras_logo.png" width="200" height="55">](keras/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[<img src="images/pytorch_logo.png" width="200" height="48">](pytorch/)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+## Major results from our work
+1. **Learning semantics through our proposed self-supervised learning framework enriches existing self-supervised methods**
+
+<p align="center"><img width="90%" src="images/result1.png" /></p>
+
+
+2. **Semantic Genesis outperforms:**
+    * **3D models trained from scratch**
+     * **3D self-supervised pre-trained models**
+     * **3D supervised pre-trained models**
+     
+<p align="center"><img width="90%" src="images/result2.png" /></p>
+
+Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for Matlab code of superbar.
+
 
 ## Citation
-If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://github.com/fhaghighi/SemanticGenesis) by using the following BibTex entry:
+If you use this code or use our pre-trained weights for your research, please cite our paper:
 ```
 @misc{haghighi2020learning,
     title={Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration},
@@ -36,7 +55,8 @@ If you use our source code and/or refer to the baseline results published in the
 ```
 
 ## Acknowledgement
-This research has been supported partially by ASU and Mayo Clinic through a Seed Grant and an Innovation Grant, and partially by the National Institutes of Health (NIH) under Award Number R01HL128785. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH. This work has utilized the GPUs provided partially by the ASU Research Computing and partially by the Extreme Science and Engineering Discovery Environment (XSEDE) funded by the National Science Foundation (NSF) under grant number ACI-1548562. This is a patent-pending technology.
+This research has been supported partially by ASU and Mayo Clinic through a Seed Grant and an Innovation Grant, and partially by the NIH under Award Number R01HL128785. The content is solely the responsibility of the authors and does not necessarily represent the official views of the NIH. This work has utilized the GPUs provided partially by the ASU Research Computing and partially by the Extreme Science and Engineering Discovery Environment (XSEDE) funded by the National Science Foundation (NSF) under grant number ACI-1548562. We thank [Zuwei Guo](https://www.linkedin.com/in/zuwei/) for implementing Rubik's cube, [M. M. Rahman Siddiquee](https://github.com/mahfuzmohammad) for examining NiftyNet, and [Jiaxuan Pang](https://www.linkedin.com/in/jiaxuan-pang-b014ab127/) for evaluating I3D. The content of this paper is covered by patents pending. 
+
 
 ## License
 
