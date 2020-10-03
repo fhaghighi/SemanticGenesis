@@ -14,7 +14,7 @@ International Conference on Medical Image Computing and Computer Assisted Interv
 + Linux
 + Python 3.7.5
 + Keras 2.2.4+
-+ TensorFlow 1.14.0
++ TensorFlow 1.14.0+
 
 ## Training Semantic Genesis on your own unlabeled data
 
