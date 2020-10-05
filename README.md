@@ -43,14 +43,18 @@ Credit to [superbar](https://github.com/scottclowe/superbar) by Scott Lowe for M
 
 ## Citation
 If you use this code or use our pre-trained weights for your research, please cite our paper:
+
 ```
-@misc{haghighi2020learning,
-    title={Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration},
-    author={Fatemeh Haghighi and Mohammad Reza Hosseinzadeh Taher and Zongwei Zhou and Michael B. Gotway and Jianming Liang},
-    year={2020},
-    eprint={2007.06959},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@InProceedings{haghighi2020learning,
+author="Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming",
+title="Learning Semantics-Enriched Representation via Self-discovery, Self-classification, and Self-restoration",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2020",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="137--147",
+isbn="978-3-030-59710-8",
+url="https://link.springer.com/chapter/10.1007%2F978-3-030-59710-8_14"
 }
 ```
 
