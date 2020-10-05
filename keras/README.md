@@ -81,16 +81,19 @@ Your pre-trained Semantic Genesis will be saved at `./keras/Checkpoints/semantic
 
 ## Citation
 If you use our source code and/or refer to the baseline results published in the paper, please cite our [paper](https://arxiv.org/pdf/2007.06959.pdf) by using the following BibTex entry:
+
 ```
-@misc{haghighi2020learning,
-    title={Learning Semantics-enriched Representation via Self-discovery, Self-classification, and Self-restoration},
-    author={Fatemeh Haghighi and Mohammad Reza Hosseinzadeh Taher and Zongwei Zhou and Michael B. Gotway and Jianming Liang},
-    year={2020},
-    eprint={2007.06959},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@InProceedings{haghighi2020learning,
+author="Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming",
+title="Learning Semantics-Enriched Representation via Self-discovery, Self-classification, and Self-restoration",
+booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2020",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="137--147",
+isbn="978-3-030-59710-8",
+url="https://link.springer.com/chapter/10.1007%2F978-3-030-59710-8_14"
 }
-```
 
 ## Acknowledgement
 We thank [Fatemeh Haghighi](https://github.com/fhaghighi) and [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher) for their implementation of Semantic Genesis in Keras. Credit to [Models Genesis](https://github.com/MrGiovanni/ModelsGenesis) by [Zongwei Zhou](https://github.com/MrGiovanni). We build 3D U-Net architecture by referring to the released code at [ellisdg/3DUnetCNN](https://github.com/ellisdg/3DUnetCNN). This is a patent-pending technology.
