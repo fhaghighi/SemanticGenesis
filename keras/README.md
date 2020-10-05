@@ -94,6 +94,7 @@ pages="137--147",
 isbn="978-3-030-59710-8",
 url="https://link.springer.com/chapter/10.1007%2F978-3-030-59710-8_14"
 }
+```
 
 ## Acknowledgement
 We thank [Fatemeh Haghighi](https://github.com/fhaghighi) and [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher) for their implementation of Semantic Genesis in Keras. Credit to [Models Genesis](https://github.com/MrGiovanni/ModelsGenesis) by [Zongwei Zhou](https://github.com/MrGiovanni). We build 3D U-Net architecture by referring to the released code at [ellisdg/3DUnetCNN](https://github.com/ellisdg/3DUnetCNN). This is a patent-pending technology.
