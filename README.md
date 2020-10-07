@@ -17,7 +17,7 @@ This repository provides the official implementation of training Semantic Genesi
 Arizona State University<sup>1</sup>, </sup>Mayo Clinic <sup>2</sup><br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI](https://www.miccai2020.org/)), 2020 <br/>
 
-[paper](https://arxiv.org/pdf/2007.06959.pdf) | [code](https://github.com/fhaghighi/SemanticGenesis/) | talk ([YouTube](https://www.youtube.com/embed/II4VkS9Lkdo)) 
+[paper](https://arxiv.org/pdf/2007.06959.pdf) | [code](https://github.com/fhaghighi/SemanticGenesis/) | [poster](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_Poster.pdf) | [slides](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_slides.pdf) | [graphical abstract](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_Graphical_abstract.pdf) | talk ([YouTube](https://www.youtube.com/embed/II4VkS9Lkdo)) 
 
 ## Available implementation
 [<img src="images/keras_logo.png" width="200" height="55">](keras/)
