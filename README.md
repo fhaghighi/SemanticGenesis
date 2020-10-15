@@ -17,7 +17,7 @@ This repository provides the official implementation of training Semantic Genesi
 Arizona State University<sup>1</sup>, </sup>Mayo Clinic <sup>2</sup><br/>
 International Conference on Medical Image Computing and Computer Assisted Intervention ([MICCAI](https://www.miccai2020.org/)), 2020 <br/>
 
-[Paper](https://arxiv.org/pdf/2007.06959.pdf) | [Code](https://github.com/fhaghighi/SemanticGenesis/) | [Poster](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_Poster.pdf) | [Slides](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_slides.pdf) | [Graphical abstract](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_Graphical_abstract.pdf) | Talk ([YouTube](https://www.youtube.com/embed/II4VkS9Lkdo)) 
+[Paper](https://arxiv.org/pdf/2007.06959.pdf) | [Code](https://github.com/fhaghighi/SemanticGenesis/) | [Poster](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_Poster.pdf) | [Slides](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_slides.pdf) | [Graphical abstract](http://www.cs.toronto.edu/~liang/Publications/SemanticGenesis/Semantic_Genesis_Graphical_abstract.pdf) | Talk ([YouTube](https://www.youtube.com/embed/II4VkS9Lkdo), [YouKu](https://v.youku.com/v_show/id_XNDkwNzM3MzY4OA==.html)) 
 
 ## Available implementation
 [<img src="images/keras_logo.png" width="200" height="55">](keras/)
