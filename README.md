@@ -2,7 +2,7 @@
 
 --------------------------------------------------------------------------------
 
-We have trained deep models to learn semantically enriched visual representation by self-discovery, selfclassification, and self-restoration of the anatomy underneath medical images, resulting in a semantics-enriched, general-purpose, pre-trained 3D model, named <b> Semantic Genesis </b>.  Not only does our self-supervised framework outperform existing methods, but also it can be used as an  <b> add-on </b> to improve existing representation learning methods. This key contribution enables many representation learning methods to learn <b> semantics-enriched </b>  representations from unlabeled medical images, a remarkable achievement in general-purpose representation learning. 
+We have trained deep models to learn semantically enriched visual representation by self-discovery, self-classification, and self-restoration of the anatomy underneath medical images, resulting in a semantics-enriched, general-purpose, pre-trained 3D model, named <b> Semantic Genesis </b>.  Not only does our self-supervised framework outperform existing methods, but also it can be used as an  <b> add-on </b> to improve existing representation learning methods. This key contribution enables many representation learning methods to learn <b> semantics-enriched </b>  representations from unlabeled medical images, a remarkable achievement in general-purpose representation learning. 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <p align="center"><img width="100%" src="images/framework.png" /></p>
