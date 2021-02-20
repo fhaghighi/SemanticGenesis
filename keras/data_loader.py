@@ -12,6 +12,7 @@ from sklearn.utils import shuffle
 from utils.purturbation import *
 import random
 import numpy as np
+import copy
 
 class DataGenerator(keras.utils.Sequence):
     def __init__(self, images, labels, batch_size=16, dim=(64, 64, 32), nb_classes=44, augmentation=True):
