@@ -25,6 +25,7 @@ from keras.callbacks import LambdaCallback, TensorBoard, ReduceLROnPlateau
 from optparse import OptionParser
 from config import setup_config
 from data_loader import DataGenerator
+import numpy as np
 sys.setrecursionlimit(40000)
 
 
