@@ -16,6 +16,92 @@ International Conference on Medical Image Computing and Computer Assisted Interv
 + Keras 2.2.4+
 + TensorFlow 1.14.0+
 
+
+## Using the pre-trained Semantic Genesis 
+### 1. Clone the repository and install dependencies
+```bash
+$ git clone https://github.com/fhaghighi/SemanticGenesis.git
+$ cd SemanticGenesis/
+$ pip install -r requirements.txt
+```
+
+### 2. Download the pre-trained Semantic Genesis
+Download the pre-trained Semantic Genesis as following and save into `./keras/Checkpoints/semantic_genesis_chest_ct.h5` directory.
+
+<table><tbody>
+<!-- START TABLE -->
+<!-- TABLE HEADER -->
+<th valign="bottom"></th>
+<th valign="bottom">Backbone</th>
+<th valign="bottom">Platform</th>
+<th valign="bottom">model</th>
+
+<!-- TABLE BODY -->
+<tr><td align="left">Semantic Genesis</td>
+<td align="center"><a href="https://github.com/ellisdg/3DUnetCNN">U-Net 3D</a></td>
+<td align="center">Keras</td>
+<td align="center"><a href="">download</a></td>
+</tr>
+</tbody></table>
+
+### 3. Fine-tune Semantic Genesis on your own target task
+Semantic Genesis learns a generic semantics-enriched image representation that can be leveraged for a wide range of target tasks. Specifically, Semantic Genesis provides a pre-trained U-Net network, which the encoder can be utilized for the target <i>classification</i> tasks and encoder-decoder for the target <i>segmentation</i> tasks.
+
+As for the target classification tasks, the 3D deep model can be initialized with the pre-trained encoder using the following example:
+```python
+# prepare your own data
+X, y = your_data_loader()
+
+# prepare the 3D model
+import keras
+from models.ynet3d import *
+input_channels, input_rows, input_cols, input_deps = 1, 64, 64, 32
+num_class, activate = 2, 'softmax'
+weight_dir = './keras/Checkpoints/semantic_genesis_chest_ct.h5'
+semantic_genesis = ynet_model_3d((input_channels, input_rows, input_cols, input_deps), batch_normalization=True)
+print("Load pre-trained Semantic Genesis weights from {}".format(weight_dir))
+semantic_genesis.load_weights(weight_dir)
+
+x = semantic_genesis.get_layer('depth_7_relu').output
+x = keras.layers.GlobalAveragePooling3D()(x)
+output = keras.layers.Dense(num_class, activation=activate)(x)
+model = keras.models.Model(inputs=semantic_genesis.input, outputs=output)
+model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy","categorical_crossentropy"])
+
+# train the model
+model.fit(X, y)
+```
+
+As for the target segmentation tasks, the 3D deep model can be initialized with the pre-trained encoder-decoder using the following example:
+```python
+# prepare your own data
+X, Y = your_data_loader()
+
+# prepare the 3D model
+from unet3d import *
+from models.ynet3d import *
+input_channels, input_rows, input_cols, input_deps = 1, 64, 64, 32
+num_class = 2
+weight_dir = './keras/Checkpoints/semantic_genesis_chest_ct.h5'
+semantic_genesis = ynet_model_3d((input_channels, input_rows, input_cols, input_deps), batch_normalization=True)
+print("Load pre-trained Semantic Genesis weights from {}".format(weight_dir))
+semantic_genesis.load_weights(weight_dir)
+model = unet_model_3d((1,config.input_rows,config.input_cols,config.input_deps), batch_normalization=True)
+
+for layer in tuple(model.layers):
+    if "input" not in layer.name and "max_pooling3d" not in layer.name \
+            and "up_sampling3d" not in layer.name and "concatenate_" not in layer.name \
+            and "conv3d_1" not in layer.name and "activation" not in layer.name \
+            and not layer.name.startswith("conv3d"):
+        layer.set_weights(semantic_genesis.get_layer(layer.name).get_weights())
+models.compile(optimizer="adam", loss=dice_coef_loss, metrics=[mean_iou,dice_coef])
+
+# train the model
+model.fit(X, Y)
+```
+
+
+
 ## Training Semantic Genesis on your own unlabeled data
 
 ### 1. Clone the repository and install dependencies
