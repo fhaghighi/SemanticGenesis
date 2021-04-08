@@ -49,7 +49,7 @@ sys.setrecursionlimit(40000)
 
 parser = OptionParser()
 
-parser.add_option("--arch", dest="arch", help="Vnet", default="Unet", type="string")
+parser.add_option("--arch", dest="arch", help="Vnet|Unet", default="Unet", type="string")
 parser.add_option("--decoder", dest="decoder_block_type", help="transpose | upsampling", default="upsampling",
                   type="string")
 parser.add_option("--input_rows", dest="input_rows", help="input rows", default=128, type=int)
