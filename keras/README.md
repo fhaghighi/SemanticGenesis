@@ -153,7 +153,7 @@ python -W ignore self_discovery/train_autoencoder.py
 ```bash
 python -W ignore self_discovery/feature_extractor.py 
 --data_dir dataset/  
---weights self_discovery/Checkpoints/Autoencoder/Vnet_autoencoder.h5
+--weights self_discovery/Checkpoints/Autoencoder/Unet_autoencoder.h5
 ```
 
 **Step 4**: Extract 3D anatomical patterns from train and validation images. The data and their labels will be save into `self_discovery/Semantic_Genesis_data` directory.
