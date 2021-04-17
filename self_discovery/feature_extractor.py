@@ -68,9 +68,9 @@ input_depth = options.input_depth
 
 
 if options.arch =="Vnet":
-    model = vnet_model_3d((1, config.input_rows, config.input_cols, config.input_deps), batch_normalization=True)
+    model = vnet_model_3d((1, options.input_rows, options.input_cols, options.input_depth), batch_normalization=True)
 elif options.arch =="Unet":
-    model = unet_model_3d((1, config.input_rows, config.input_cols, config.input_deps), batch_normalization=True)
+    model = unet_model_3d((1, options.input_rows, options.input_cols, options.input_depth), batch_normalization=True)
 
 model.load_weights(options.weights)
 model.compile(optimizer=keras.optimizers.SGD(lr=0.001, momentum=0.9, decay=0.0, nesterov=False,clipnorm=1),
