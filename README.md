@@ -21,7 +21,7 @@ International Conference on Medical Image Computing and Computer Assisted Interv
 
 <b>Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning </b> <br/>
 [Fatemeh Haghighi](https://github.com/fhaghighi)<sup>1</sup>, [Mohammad Reza Hosseinzadeh Taher](https://github.com/MR-HosseinzadehTaher)<sup>1</sup>,[Zongwei Zhou](https://github.com/MrGiovanni)<sup>1</sup>,[Michael B. Gotway](https://www.mayoclinic.org/biographies/gotway-michael-b-m-d/bio-20055566)<sup>2</sup>, [Jianming Liang](https://chs.asu.edu/jianming-liang)<sup>1</sup><br/>
-Arizona State University<sup>1</sup>, </sup>Mayo Clinic, <sup>2</sup><br/>
+<sup>1</sup> Arizona State University, <sup>2</sup>Mayo Clinic<br/>
 IEEE Transactions on Medical Imaging (TMI) <br/>
 [paper](https://arxiv.org/pdf/2102.10680.pdf) | [code](https://github.com/fhaghighi/TransVW)
 
