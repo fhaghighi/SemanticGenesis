@@ -46,7 +46,7 @@ Download the pre-trained Semantic Genesis as following and save into `./pytorch/
 <tr><td align="left">Semantic Genesis</td>
 <td align="center"><a href="https://github.com/ellisdg/3DUnetCNN">U-Net 3D</a></td>
 <td align="center">Pytorch</td>
-<td align="center"><a href="">download</a></td>
+<td align="center"><a href="https://zenodo.org/record/4625297/files/semantic_genesis_chest_ct.pt?download=1">download</a></td>
 </tr>
 </tbody></table>
 
