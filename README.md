@@ -63,12 +63,15 @@ isbn="978-3-030-59710-8",
 url="https://link.springer.com/chapter/10.1007%2F978-3-030-59710-8_14"
 }
 
-@article{haghighi2021transferable,
-      title={Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-supervised Learning}, 
-      author={Haghighi, Fatemeh and Hosseinzadeh Taher, Mohammad Reza and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming},
-      year={2021},
-   journal={arXiv preprint arXiv:2102.10680},
-}
+@ARTICLE{haghighi2021transferable,
+  author={Haghighi, Fatemeh and Taher, Mohammad Reza Hosseinzadeh and Zhou, Zongwei and Gotway, Michael B. and Liang, Jianming},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={Transferable Visual Words: Exploiting the Semantics of Anatomical Patterns for Self-Supervised Learning}, 
+  year={2021},
+  volume={40},
+  number={10},
+  pages={2857-2868},
+  doi={10.1109/TMI.2021.3060634}}
 ```
 
 ## Acknowledgement
